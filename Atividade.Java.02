@@ -1,0 +1,26 @@
+import java.util.Scanner; 
+    
+class HelloWorld {
+    public static void main(String[] args) {
+      
+      Scanner scanner = new Scanner(System.in);
+      
+      int valor = 0;
+      double cot = 0.0;
+      
+      System.out.println("Informe o valor para converter");
+       valor = scanner.nextInt();
+       
+       System.out.println("Qual a cotacao atual");
+       cot = scanner.nextDouble();
+       
+       double conv = valor * cot;
+       
+       System.out.println("O valor convertido eh " + conv);
+       
+       scanner.close();
+        
+                
+      
+    }
+}
