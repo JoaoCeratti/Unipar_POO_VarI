@@ -1,0 +1,23 @@
+import java.util.Scanner; 
+    
+class HelloWorld {
+    public static void main(String[] args) {
+      
+    Scanner scanner = new Scanner(System.in);
+    
+    float nota1 = 0.0F;
+    float nota2 = 0.0F;
+    
+    System.out.println("Nota 1: ");
+    nota1 = scanner.nextFloat();
+    
+    System.out.println("Nota 2: ");
+    nota2 = scanner.nextFloat();
+    
+    float media = ( nota1 + nota2 ) /2;
+    
+    System.out.println("Sua media eh: " + media);
+    
+    scanner.close();
+    }
+}
