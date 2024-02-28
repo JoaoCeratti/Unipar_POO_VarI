@@ -1,0 +1,27 @@
+import java.util.Scanner; 
+    
+class HelloWorld {
+    public static void main(String[] args) {
+      
+        Scanner scanner = new Scanner(System.in);
+        
+        double celsius = 0.0;
+        double fahrenheit = 0.0;
+        
+        System.out.println("----------------------------------------------"); 
+        
+        System.out.println("Informe a temperatura em celsius: ");
+        
+        celsius = scanner.nextDouble();
+        
+        double conv = (celsius * 9/5) + 32;
+        
+        System.out.println(" ");
+        
+        System.out.println("A temperatura em fahrenheit eh: " + conv);
+        
+        System.out.println("----------------------------------------------"); 
+        
+        scanner.close();
+    }
+}
