@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int yn = 0;
+        int[] number = new int[5];
+        Scanner scanner = new Scanner(System.in);
+        
+        for (int i = 0; i < 5; i++) {
+            System.out.printf("Numero " + (i + 1) + ":");
+            number[i] = scanner.nextInt();
+        }
+        
+        for (int x = 0; x < 5; x++) {
+            System.out.println(number[x]);
+        }
+        
+        System.out.println("Deseja remover o ultimo numero da lista? ");
+        System.out.println("1 - Sim");
+        System.out.println("2 - Nao");
+        yn = scanner.nextInt();
+        
+        if (yn == 1) {
+            number[4] = 0;
+            System.out.println("Numero removido.");
+        } else {
+            System.out.println("O numero " + number[4] + " nao sera removido.");
+        }
+        
+        System.out.println("----------------------------------------------");
+        for (int x = 0; x < 5; x++) {
+            System.out.println(number[x]);
+        }
+    }
+}
